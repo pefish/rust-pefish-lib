@@ -1,0 +1,14 @@
+[package]
+name = "examples"
+version = "0.0.0"
+publish = false
+edition = "2018"
+
+[dependencies]
+tokio = { version = "1.17.0", features = ["full"] }
+anyhow = "1.0.56"
+block_until_sigint = { version = "0.1.0", path = "../block_until_sigint" }
+
+[[example]]
+name = "block_until_sigint"
+path = "block_until_sigint.rs"

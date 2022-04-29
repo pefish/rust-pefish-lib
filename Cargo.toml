@@ -1,0 +1,8 @@
+
+[workspace]
+
+members = [
+  "block_until_sigint",
+
+  "examples",
+]
