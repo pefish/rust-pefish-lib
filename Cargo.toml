@@ -3,6 +3,7 @@
 
 members = [
   "block_until_sigint",
+  "binance_connector_rust",
 
   "examples",
 ]
