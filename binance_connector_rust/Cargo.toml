@@ -1,13 +1,13 @@
 [package]
-name = "create_rust_lib_template"
-version = "0.1.0"
+name = "binance_connector_rust"
+version = "0.1.1"
 authors = ["pefish <pefish@qq.com>"]
 license = "MIT OR Apache-2.0"
 readme = "README.md"
-repository = "https://github.com/pefish/binance_connector_rust"
-documentation = "https://github.com/pefish/binance_connector_rust"
-homepage = "https://github.com/pefish/binance_connector_rust"
-description = ""
+repository = "https://github.com/pefish/rust-pefish-lib"
+documentation = "https://github.com/pefish/rust-pefish-lib"
+homepage = "https://github.com/pefish/rust-pefish-lib"
+description = "A simple connector to Binance Public API"
 exclude = ["docs", "/.travis.yml", "/appveyor.yml", ".gitignore"]
 autobenches = true
 edition = "2018"
@@ -18,7 +18,9 @@ anyhow = "1.0.56"
 reqwest = { version = "0.11.11", features = ["blocking", "json"] }
 rust_decimal = "1.25.0"
 serde = { version = "1.0.137", features = ["derive"] }
-
+ring = "0.16.20"
+hex = "0.4.3"
+serde_json = "1.0.82"
 
 [[example]]
 name = "test"
